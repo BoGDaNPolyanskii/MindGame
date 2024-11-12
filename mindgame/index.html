@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Mind Game</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function openLevel(level) {
+            window.location.href = `level${level}.html`;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="MG Logo" height="40">
+        <nav>
+            <a href=="index.html" class="active">Головна сторінка</a>
+            <a href="contactUs.html">Зв'язатися з нами</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-container">
+            <div class="rules-game-container">
+                <h2>Правила гри</h2>
+                <div class="rules-text">1. Користувач обирає рівень складності (1 = легкий, 2 = середній, 3 = складний).</div>
+                <div class="rules-text">2. На екрані відображаються перевернуті плитки у рядах.</div>
+                <div class="rules-text">3. Гравець перевертає по дві плитки. Якщо зображення на них збігаються, вони зникають.</div>
+                <div class="rules-text">4. Якщо зображення різні, плитки перевертаються назад, і гравець повинен запам’ятати їхні місця.</div>
+                <div class="rules-text" style="margin-top: 20px;">Мета гри — знайти всі пари плиток, щоб вони зникли.</div>
+            </div>
+        </div>
+
+        <div class="level-container">
+            <h3>Вибір рівня</h3>
+            <div class="button-container">
+                <div>
+                    <button class="button" onclick="openLevel(1)">1</button>
+                    <div class="level-label">1 рівень</div>
+                </div>
+                <div>
+                    <button class="button" onclick="openLevel(2)">2</button>
+                    <div class="level-label">2 рівень</div>
+                </div>
+                <div>
+                    <button class="button" onclick="openLevel(3)">3</button>
+                    <div class="level-label">3 рівень</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-text">Email: mind_game@gmail.com</div>
+        <div class="footer-text">© 2024 Mind Game Pattern. All rights reserved.</div>
+    </footer>
+</body>
+</html>
